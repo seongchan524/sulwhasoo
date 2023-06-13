@@ -33,4 +33,26 @@ $(function(){
         $(".recommend_list_wrap > ul").eq(n).addClass("act");
     }) //click
 
+    /* flagship 슬라이더 */
+
+    $(".flag_slider").slick({
+        autoplay:true,
+        autoplaySpeed:2500,
+        dots:true,
+        arrows:true,
+        fade:true
+    }) //
+
+    // 모바일 영역
+    
+    $(".mob_nav_btn").click(function(){
+        $(".mob_nav").addClass("left_move");
+        $(".m_nav_bg").delay(0).fadeIn();
+    }) //
+
+    $(".m_nav_bg").click(function(){
+        $(".mob_nav").removeClass("left_move");
+        $(".m_nav_bg").fadeOut();
+    })
+
 }) //jQuery
